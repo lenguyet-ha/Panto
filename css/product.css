@@ -24,21 +24,33 @@
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
 }
+.container {
+  max-width: 1440px;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+@media (min-width: 1441px) {
+  body {
+    background-color: #f4f4f4;
+    justify-content: center;
+    display: flex;
+  }
+}
 
 body {
   font-family: "Gilroy", serif;
   background-color: #f8f8f8;
-  overflow: hidden;
+  
 }
 
 .header h1 {
   font-family: "Gilroy", serif;
   font-weight: 700;
   font-size: 42px;
-  position: relative;
-  top: 50px;
-  right: 525px;
-  left: 525px;
+
+  margin-top: 50px;
 }
 .tab-container {
   display: flex;
@@ -47,10 +59,7 @@ body {
   border-radius: 44px;
   width: 348px;
   height: 57px;
-  position: absolute;
-  top: 130px;
-  right: 546px;
-  left: 546px;
+  margin-top: 30px; /* Thay vì absolute */
 }
 .tab {
   padding: 4px;
@@ -69,12 +78,8 @@ body {
 .product-list {
   display: flex;
   gap: 42px;
-  position: absolute;
-  top: 271px;
-  justify-content: space-between;
-  right: 121px;
-  left: 120px;
-  z-index: 0;
+  justify-content: center;
+  margin-top: 115px;
 }
 .product-list h4 {
   font-family: "Gilroy", serif;
@@ -145,24 +150,37 @@ body {
 
 .view-all {
   color: #e58411;
-  position: absolute;
-  top: 823px;
-  left: 665px;
   display: flex;
   gap: 12px;
   align-items: center;
+  margin-top: 60px;
 }
+.arrow-left, .arrow-right {
+  position: absolute;
+ 
+  z-index: 200;
+  top: 49%; 
+  transform: translateY(-53%); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .arrow-left {
-  position: absolute; 
-  top: 53%;
-  left: 75px;
-  transform: translateY(-50%); 
-  z-index: 200;
+  left: calc(50% - 650px); 
+
+
 }
-.arrow-right{
-  position: absolute; 
-  top: 53%;
-  right: 75px;
-  transform: translateY(-50%); 
-  z-index: 200;
+
+.arrow-right {
+  right: calc(50% - 650px); 
+ 
+}
+
+.product-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px; /* Giữ layout không bị quá rộng */
 }
