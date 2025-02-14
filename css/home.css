@@ -1,0 +1,227 @@
+/* Reset */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+body {
+  font-family: "Gilroy", serif;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 1084px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.header {
+  position: absolute;
+  top: 31px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo .panto {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  font-family: "Gilroy", serif;
+  position: relative;
+  left: 5px;
+}
+
+/* Navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+}
+
+.nav-links li {
+  display: inline-flex;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  transition: color 0.3s ease;
+  font-family: "Gilroy", serif;
+}
+
+.nav-links a:hover {
+  color: #ff7b00;
+}
+
+/* Giỏ hàng */
+.cart img {
+  width: 30px;
+  cursor: pointer;
+  margin-right: 10px ;
+
+}
+.card {
+  position: relative;
+  right: 10px;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  transform: translateY(-250px);
+  left: 10px;
+}
+.hero-content-container {
+  flex-direction: column;
+  line-height: 104px;
+}
+.hero-title {
+  font-family: "Gilroy", serif;
+  font-size: 80px;
+  line-height: 104px;
+  max-width: 1000px;
+  font-weight: 700;
+  margin-top: 161px;
+  position: relative;
+  top: -27px;
+}
+.turn-your-room {
+  font-family: "Gilroy", serif;
+  font-size: 24px;
+  flex: 1;
+  position: relative;
+  line-height: 160%;
+  display: inline-block;
+  max-width: 606px;
+  z-index: 1;
+  line-height: 38.4px;
+  top: -10px;
+  left: -10px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 100px;
+  position: relative;
+}
+.footer-content {
+position: absolute;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 30px;
+left: 350px;
+}
+
+
+.footer h2 {
+  font-size: 42px;
+  line-height: 49.22px;
+  font-weight: 700;
+  font-family: "Gilroy", serif;
+  position: relative;
+  right: 20px
+}
+.footer p {
+  max-width: 284px;
+  font-family: "Gilroy", serif;
+  line-height: 30px;
+  text-align: justify;
+  font-size: 16px;
+  height: 90px;
+}
+
+h2,
+h4 {
+  font-family: "Gilroy", serif;
+}
+h4 {
+  position: relative;
+  bottom: 20px;
+  font-size: 24px;
+}
+.more-info {
+  margin-top: 14px;
+  color: orange;
+}
+.more-info-arrow {
+  display: flex;
+  position: relative;
+
+}
+.more-info-arrow svg {
+  position: absolute;
+  top: 10px;
+ left: 80px;
+ top: 20px;
+}
+.search-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.input {
+  border-radius: 42px;
+  width: 344px;
+  height: 56px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 0.9px solid rgba(255, 255, 255, 0.6);
+}
+input::placeholder {
+  color: white;
+  font-family: "Gilroy", serif;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 20px;
+}
+.search-btn {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
