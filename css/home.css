@@ -21,18 +21,23 @@
 }
 body {
   font-family: "Gilroy", serif;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 /* HERO SECTION */
 .hero {
   position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 1084px;
-  display: flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
   color: white;
+ 
 }
 .hero-background {
   position: absolute;
@@ -48,7 +53,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
 
 .header {
   position: absolute;
@@ -104,8 +108,7 @@ body {
 .cart img {
   width: 30px;
   cursor: pointer;
-  margin-right: 10px ;
-
+  margin-right: 10px;
 }
 .card {
   position: relative;
@@ -152,14 +155,13 @@ body {
   position: relative;
 }
 .footer-content {
-position: absolute;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-gap: 30px;
-left: 350px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  left: 350px;
 }
-
 
 .footer h2 {
   font-size: 42px;
@@ -167,7 +169,7 @@ left: 350px;
   font-weight: 700;
   font-family: "Gilroy", serif;
   position: relative;
-  right: 20px
+  right: 20px;
 }
 .footer p {
   max-width: 284px;
@@ -194,13 +196,12 @@ h4 {
 .more-info-arrow {
   display: flex;
   position: relative;
-
 }
 .more-info-arrow svg {
   position: absolute;
   top: 10px;
- left: 80px;
- top: 20px;
+  left: 80px;
+  top: 20px;
 }
 .search-wrapper {
   position: relative;
