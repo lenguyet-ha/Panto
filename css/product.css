@@ -42,7 +42,6 @@
 body {
   font-family: "Gilroy", serif;
   background-color: #f8f8f8;
-  
 }
 
 .header h1 {
@@ -59,7 +58,7 @@ body {
   border-radius: 44px;
   width: 348px;
   height: 57px;
-  margin-top: 30px; /* Thay vì absolute */
+  margin-top: 30px;
 }
 .tab {
   padding: 4px;
@@ -80,6 +79,7 @@ body {
   gap: 42px;
   justify-content: center;
   margin-top: 115px;
+  align-items: center;
 }
 .product-list h4 {
   font-family: "Gilroy", serif;
@@ -155,26 +155,24 @@ body {
   align-items: center;
   margin-top: 60px;
 }
-.arrow-left, .arrow-right {
+.arrow-left,
+.arrow-right {
   position: absolute;
- 
+
   z-index: 200;
-  top: 49%; 
-  transform: translateY(-53%); 
+  top: 49%;
+  transform: translateY(-53%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .arrow-left {
-  left: calc(50% - 650px); 
-
-
+  left: calc(50% - 650px);
 }
 
 .arrow-right {
-  right: calc(50% - 650px); 
- 
+  right: calc(50% - 650px);
 }
 
 .product-container {
@@ -182,5 +180,5 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 1440px; /* Giữ layout không bị quá rộng */
+  max-width: 1440px;
 }
