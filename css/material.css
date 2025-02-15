@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../gilroy/Gilroy-Regular.ttf") format("truetype");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../gilroy/Gilroy-Bold.ttf") format("truetype");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../gilroy/Gilroy-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../gilroy/Gilroy-Medium.ttf") format("truetype");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../gilroy/Gilroy-Thin.ttf") format("truetype");
+    font-weight: 300;
+  }
+  
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.body {
+  position: relative;
+  width: 100%;
+  display: flex;
+  width: 1440px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+
+}
+.material-image1 {
+  position: absolute;
+  top: 170px;
+  right: 487px;
+  z-index: 5;
+}
+.material-image3 {
+  position: absolute;
+  top: 450px;
+  right: 487px;
+}
+.material-image2 {
+  position: absolute;
+  top: 330px;
+  right:0;
+}
+.material-bg{
+   position: absolute;
+  border-radius: 20px 0 0 0 ;
+  background-color: #f7f7f7;
+  width: 278px;
+  height: 422px;
+  left: 1162px;
+  top: 270px;
+  z-index: -1;
+}
+.materials-title{
+    font-family: "Gilroy", serif;
+    font-weight: 600;
+    color: #e58411;
+ 
+}
+.materials-heading{
+    font-family: "Gilroy", serif;
+    font-weight: 700;
+    margin: 20px 0px;
+    max-width: 413px;
+    font-size: 42px;
+    line-height: 49.22px;
+ 
+}
+
+
+.materials-description {
+  max-width: 556px;
+  font-size: 18px;
+  line-height: 33.3px;
+  font-family: "Gilroy", serif;
+  font-weight: 400;
+  margin: 20px 0px;
+}
+.more-info a{
+    font-family: "Gilroy", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25.9px;
+    color: #e58411;
+}
+.more-info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.materials-text{
+    margin-left: 80px;
+    margin-right: 94px;
+}
