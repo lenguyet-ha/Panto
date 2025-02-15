@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../gilroy/Gilroy-Regular.ttf") format("truetype");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../gilroy/Gilroy-Bold.ttf") format("truetype");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../gilroy/Gilroy-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../gilroy/Gilroy-Medium.ttf") format("truetype");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url("../gilroy/Gilroy-Thin.ttf") format("truetype");
+    font-weight: 300;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+  .container {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    width: 1440px;
+  
+    justify-content: center;
+  }
+  .container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header {
+    margin-bottom: 60px;
+  }
+  .header p {
+    font-size: 18px;
+    font-family: "Gilroy", serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    align-self: center;
+    color: #e58411;
+  }
+  
+  .header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: "Gilroy", serif;
+    margin: 0;
+  }
+  .list-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 39px;
+  }
+  .card-container {
+    margin-top: 0;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 200px;
+    border: 7px solid white;
+  }
+  .review {
+    max-width: 252px;
+    display: flex;
+    font-weight: 400;
+    text-align: center;
+    color: #1e1e1e;
+  }
+  .card-content h3,
+  .job-title,
+  .review {
+    font-family: "Gilroy", serif;
+    margin: 0px 0px 20px 0px;
+  }
+  .job-title {
+    font-size: 12px;
+    color: #1e1e1e;
+  }
+  .card-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .card-content {
+    background-color: #fff;
+    width: 334px;
+    height: 229px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 20px;
+    right: 18px;
+  }
+  .card {
+    position: relative;
+  }
+  /* .footer{
+    margin-top: 300px;
+    width: 1440px;
+    height: 462px;
+    background-color: #f7f7f7;
+   
+   
+   
+
+  } */
+   .footer{
+    width: 1440px;
+    height: 462px;
+    background-color: #f7f7f7;
+    margin-top: 300px;
+    }
+  .footer-content {
+     
+   padding-top: 118px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+ 
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    max-width: 293px;
+  }
+  .brand {
+    font-family: "Gilroy", serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin: 0px 0px 29px 0px;
+  }
+  .detail-description {
+    font-family: "Gilroy", serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #1e1e1e;
+    line-height: 24px;
+    margin: 0px;
+  }
+  .services-list,
+  .furniture-list,
+  .socials {
+    font-family: "Gilroy", serif;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .services,
+  .furniture,
+  .follow-us {
+    color: #f6973f;
+  }
+
+  .follow-us{
+      margin-bottom: 0px;
+  }
+  .socials {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px; /* Giữ khoảng cách đồng đều giữa các dòng */
+      position: relative;
+      top: -5px;
+    
+    }
+    
+    .wrap-socials {
+      display: flex;
+      flex-direction: column;
+      gap: 16px; /* Đảm bảo khoảng cách đều giữa các mục */
+  
+     
+  
+    }
+    
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 16px; /* Khoảng cách đồng đều giữa icon và chữ */
+      width: 200px; /* Giữ một độ rộng cố định */
+    }
+    
+    .social img {
+      width: 20px; /* Điều chỉnh kích thước icon */
+      height: 20px;
+      flex-shrink: 0; /* Đảm bảo icon không bị co lại */
+    }
+    
+    .social p {
+      margin: 0;
+      font-size: 16px;
+      font-family: "Gilroy", sans-serif;
+      font-weight: 400;
+      text-align: left;
+      min-width: 120px; /* Đảm bảo tất cả các chữ đều có cùng chiều rộng */
+      display: flex;
+      align-items: center;
+    }
+    .footer-bottom {
+        width: 80%;
+        max-width: 1064px;
+        display: flex;
+        justify-content: space-between;
+      padding-left:188px ;
+      padding-top: 118px;
+        font-size: 15px;
+        color: #666;
+        font-family: "Gilroy", sans-serif;
+        align-items: center;
+    }
+    .footer-bottom  p{
+        position: relative;
+        left: -35px;
+    }
+    
