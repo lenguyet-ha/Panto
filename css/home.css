@@ -19,7 +19,7 @@
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
 }
-body {
+#home body {
   font-family: "Gilroy", serif;
   margin: 0 auto;
   max-width: 1440px;
@@ -38,7 +38,7 @@ body {
   text-align: center;
   color: white;
 }
-.hero-background {
+ .hero-background {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -47,30 +47,31 @@ body {
   left: 0;
 }
 
-.hero-img {
+ .hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.header {
+.hero .header {
   position: absolute;
-  top: 31px;
+top: 31px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.container {
+ .hero .container {
   width: 90%;
   max-width: 1300px;
-  display: flex;
+  display: flex; 
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
 /* Logo */
-.logo .panto {
+ .logo .panto {
   font-size: 24px;
   font-weight: 500;
   color: white;
@@ -80,17 +81,17 @@ body {
 }
 
 /* Navigation */
-.nav-links {
+ .hero .nav-links {
   list-style: none;
   display: flex;
   gap: 70px;
 }
 
-.nav-links li {
+ .hero .nav-links li {
   display: inline-flex;
 }
 
-.nav-links a {
+.hero .nav-links a {
   text-decoration: none;
   font-size: 18px;
   line-height: 21px;
@@ -99,31 +100,31 @@ body {
   font-family: "Gilroy", serif;
 }
 
-.nav-links a:hover {
+.hero .nav-links a:hover {
   color: #ff7b00;
 }
 
-/* Giỏ hàng */
-.cart img {
+/* Giỏ hàng */ a
+.hero .cart img {
   width: 30px;
   cursor: pointer;
   margin-right: 10px;
 }
-.card {
+.hero .card {
   position: relative;
   right: 10px;
 }
-.hero-content {
+.hero .hero-content {
   position: relative;
   z-index: 1;
   transform: translateY(-250px);
   left: 10px;
 }
-.hero-content-container {
+.hero .hero-content-container {
   flex-direction: column;
   line-height: 104px;
 }
-.hero-title {
+.hero .hero-title {
   font-family: "Gilroy", serif;
   font-size: 80px;
   line-height: 104px;
@@ -146,14 +147,14 @@ body {
   top: -10px;
   left: -10px;
 }
-.footer {
+#home .footer {
   display: flex;
   justify-content: space-between;
 
   margin: 100px;
   position: relative;
 }
-.footer-content {
+#home .footer-content {
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -162,7 +163,7 @@ body {
   left: 350px;
 }
 
-.footer h2 {
+#home .footer h2 {
   font-size: 42px;
   line-height: 49.22px;
   font-weight: 700;
@@ -170,7 +171,7 @@ body {
   position: relative;
   right: 20px;
 }
-.footer p {
+#home .footer p {
   max-width: 284px;
   font-family: "Gilroy", serif;
   line-height: 30px;
@@ -189,7 +190,7 @@ h4 {
   font-size: 24px;
 }
 .more-info {
-  margin-top: 14px;
+  margin-top: -14px;
   color: orange;
 }
 .more-info-arrow {

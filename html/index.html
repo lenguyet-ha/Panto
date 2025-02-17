@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panto</title>
+    <link rel="stylesheet" href="../css/experience.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/material.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/Testimonial.css">
+  </head>
+  <body>
+
+    <!-- Nơi tải nội dung từ các file -->
+    <div id="home" class="section"></div>
+    <div id="product" class="section"></div>
+    <div id="experience" class="section"></div>
+    <div id="material" class="section"></div>
+    <div id="testimonial" class="section"></div>
+
+    <script>
+      // Hàm tải nội dung từ file HTML và chèn vào trang
+      function loadContent(targetId, file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById(targetId).innerHTML = data;
+          })
+          .catch(error => console.error(`Lỗi tải ${file}:`, error));
+      }
+
+      // Gọi hàm loadContent() để tải tất cả file HTML
+      loadContent("home", "./home.html");
+      loadContent("product", "./product.html");
+      loadContent("experience", "./experience.html");
+      loadContent("material", "./material.html");
+      loadContent("testimonial", "./Testimonial.html");
+    </script>
+
+  </body>
+</html>
