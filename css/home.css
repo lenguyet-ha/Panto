@@ -28,7 +28,7 @@ body {
 /* HERO SECTION */
 .hero {
   position: relative;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +37,6 @@ body {
   align-items: center;
   text-align: center;
   color: white;
- 
 }
 .hero-background {
   position: absolute;
@@ -225,4 +224,400 @@ input::placeholder {
   position: absolute;
   right: 10px;
   top: 8px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 810px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .hero-background,
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Điều chỉnh vị trí nội dung hero */
+  .hero-content {
+    transform: translateY(0);
+    left: 0;
+    margin-top: 40px;
+  }
+  .container {
+    font-size: 12px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    margin-top: 30px;
+    line-height: 42px;
+  }
+  .panto {
+    font-size: 15px;
+  }
+
+  .turn-your-room {
+    font-size: 16px;
+    left: 0;
+    margin-top: 0px;
+    max-width: 400px;
+  }
+
+  .search-wrapper {
+    position: relative;
+    bottom: 35px;
+  }
+
+  .search-wrapper .input {
+    width: 200px;
+    height: 30px;
+  }
+  input::placeholder {
+    font-size: 12px;
+  }
+  .search-btn {
+    width: 20px;
+    position: relative;
+    right: 30px;
+    margin-bottom: 2px;
+  }
+  /* Header (Logo, Nav) */
+  .nav-links {
+    gap: 40px;
+  }
+  .nav-links a {
+    font-size: 16px;
+  }
+  .cart img {
+    width: 20px;
+  }
+
+  /* Footer Section */
+  .footer {
+    margin: 400px auto 0 auto;
+    height: auto; /* Bỏ chiều cao cố định, để auto theo nội dung */
+    display: flex;
+    flex-direction: row; /* Xếp ngang */
+    align-items: flex-start; /* Căn trên cùng hoặc center tùy ý */
+    justify-content: space-between;
+    text-align: left; /* Thường để text-align left khi xếp ngang */
+    position: relative;
+    padding: 0 20px; /* Nếu muốn có khoảng cách hai bên */
+  }
+
+  /* Tiêu đề "Why Choosing Us" đặt ở bên trái */
+  .footer h2 {
+    font-size: 30px; /* Tùy chỉnh lại kích thước */
+    line-height: 40px;
+    margin-right: 30px; /* Tạo khoảng cách với khối kế tiếp */
+    position: static; /* Bỏ position: relative nếu có */
+  }
+
+  /* Khối chứa các item (Luxury facilities, v.v.) */
+  .footer-content {
+    position: static; /* Bỏ absolute để không bị tràn ngang */
+    display: flex;
+    flex-direction: row; /* Xếp ngang các item */
+    align-items: flex-start;
+    gap: 30px; /* Khoảng cách ngang giữa các item */
+    margin-top: 0;
+  }
+
+  /* Mỗi khối item (h4, p, link More info) hiển thị dạng cột hẹp */
+  .footer-content-item,
+  .footer-content > div {
+    max-width: 250px; /* Giới hạn chiều rộng cho mỗi khối */
+  }
+
+  /* Tùy chỉnh lại font-size mô tả cho gọn */
+  .footer-content-item p {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+  }
+  .footer-content-item h4 {
+    font-size: 20px;
+  }
+  /* More info */
+  .more-info-arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .more-info-arrow svg {
+    width: 40px;
+    height: auto;
+  }
+}
+@media screen and (width: 902px) and (height: 1443px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .hero-background,
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Điều chỉnh vị trí nội dung hero */
+  .hero-content {
+    transform: translateY(0);
+    left: 0;
+    margin-top: 40px;
+  }
+  .container {
+    font-size: 12px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    margin-top: 30px;
+    line-height: 42px;
+  }
+  .panto {
+    font-size: 15px;
+  }
+
+  .turn-your-room {
+    font-size: 16px;
+    left: 0;
+    margin-top: 0px;
+    max-width: 400px;
+  }
+
+  .search-wrapper {
+    position: relative;
+    bottom: 35px;
+  }
+
+  .search-wrapper .input {
+    width: 200px;
+    height: 30px;
+  }
+  input::placeholder {
+    font-size: 12px;
+  }
+  .search-btn {
+    width: 20px;
+    position: relative;
+    right: 30px;
+    margin-bottom: 2px;
+  }
+  /* Header (Logo, Nav) */
+  .nav-links {
+    gap: 40px;
+  }
+  .nav-links a {
+    font-size: 16px;
+  }
+  .cart img {
+    width: 20px;
+  }
+  .footer {
+    flex-direction: column !important; /* Ghi đè thuộc tính row */
+    align-items: center; /* Căn giữa nếu muốn */
+    justify-content: flex-start; /* hoặc center, tùy ý */
+    text-align: center; /* Căn chữ giữa nếu muốn */
+    margin: 300px auto 0 auto; /* Điều chỉnh margin cho gọn */
+    padding: 0 20px;
+  }
+
+  /* Bên trong footer-content cũng xếp dọc */
+  .footer-content {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 30px;
+    position: static;
+    margin-top: 20px; /* Tạo khoảng cách so với tiêu đề h2 */
+  }
+
+  /* Nếu muốn mỗi khối chiếm hết chiều ngang khi xếp dọc */
+  .footer-content > div {
+    max-width: 100%;
+  }
+  .footer h2 {
+    margin: 50px 0 30px 0;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 393px) and (min-height: 667px) and (max-height: 876px) {
+  /* Đảm bảo body không tràn ngang */
+  body {
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    position: relative;
+    top: -20px;
+  }
+  /* HERO SECTION */
+  .hero {
+    height: auto; /* Bỏ chiều cao cố định */
+    padding: 20px 0; /* Tạo khoảng trống trên-dưới nếu cần */
+  }
+
+  /* Hình nền hero */
+  .hero-background,
+  .hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Giữ tỷ lệ ảnh */
+  }
+
+  /* Nội dung hero */
+  .hero-content {
+    transform: translateY(0); /* Bỏ dịch chuyển quá nhiều */
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 45px;
+  }
+  .hero-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .turn-your-room {
+    font-size: 10px;
+    line-height: 12px;
+    width: 220px;
+    position: relative;
+   
+  
+  }
+
+
+  .search-wrapper .input {
+    width: 150px;
+    height: 20px;
+  }
+  .search-btn {
+    width: 15px;
+    position: absolute;
+    right: 38px;
+    top: 2.4px;
+  }
+  input::placeholder {
+    font-size: 8px;
+    position: relative;
+    bottom: 3px;
+    left: -10px;
+  }
+
+  /* Header (Logo, Nav) */
+  .container {
+    font-size: 12px; /* Giảm cỡ chữ chung nếu cần */
+  }
+  .logo .panto {
+    font-size: 14px !important;
+  }
+
+  .nav-links {
+    gap: 10px; /* Giảm khoảng cách giữa các link */
+  }
+  .nav-links a {
+    font-size: 12px; /* Giảm một chút cho vừa màn hình hẹp */
+  }
+  .cart img {
+    width: 15px; /* Giảm kích thước icon giỏ hàng */
+  }
+
+  /* FOOTER */
+  .footer {
+    margin: 100px auto 0 auto !important; /* Giảm margin trên */
+    height: auto; /* Cho footer tự co chiều cao */
+    display: flex;
+    flex-direction: column; /* Xếp dọc cho gọn trên màn hẹp */
+    align-items: center;
+    text-align: center;
+    left: 82.5px;
+    position: absolute;
+    padding: 10px; /* Thêm khoảng cách nếu cần */
+  
+    
+  }
+
+  .footer h2 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    position: static;
+    margin-top: 20px;
+  }
+
+  .footer-content {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-content > div {
+    max-width: 200px; /* Giới hạn độ rộng mỗi khối */
+  }
+
+  .footer-content-item p {
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    height: 50px;
+  }
+  .footer-content-item {
+    height: 120px;
+  }
+  .footer-content-item h4 {
+    font-size: 13px;
+    position: static; /* Bỏ absolute nếu có */
+    bottom: auto;
+    margin-bottom: 10px;
+  }
+
+  /* Mũi tên More info */
+  .more-info-arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100px;
+    justify-self: center;
+  }
+  .more-info-arrow svg {
+    width: 30px;
+    height: auto;
+    position: static;
+    margin-bottom: 20px;
+  }
 }
