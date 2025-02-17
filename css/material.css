@@ -109,3 +109,64 @@
     margin-left: 80px;
     margin-right: 94px;
 }
+@media screen and (min-width: 768px) and (max-width: 902px) and (min-height: 1024px) and (max-height: 1443px) {
+  /* Đặt .body thành cột, chiếm đủ chiều cao màn hình để căn giữa hợp lý */
+  .body {
+    display: flex;
+    flex-direction: column; /* sắp xếp theo chiều dọc */
+    align-items: center;
+    justify-content: flex-start; /* hoặc center nếu muốn căn giữa toàn bộ */
+    min-height: 100vh; /* chiếm đủ chiều cao màn hình */
+    padding: 40px;
+    gap: 40px; /* Tạo khoảng cách giữa phần text và phần ảnh */
+  }
+
+  /* Phần text ở trên, căn giữa */
+ .materials-text {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto; /* căn giữa theo chiều ngang */
+  }
+
+  .materials-title {
+    font-size: 18px;
+  }
+  .materials-heading {
+    font-size: 36px;
+    line-height: 42px;
+    margin: 20px 0;
+  }
+  .materials-description {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 15px 0;
+  }
+  #material .more-info a {
+    font-size: 14px;
+  }
+
+  /* Chuyển các hình ảnh sang dạng sắp xếp theo hàng hoặc cột tùy ý */
+  .materials-images {
+    display: flex;
+    flex-wrap: wrap; /* cho phép ảnh xuống dòng nếu không đủ chỗ */
+    justify-content: center;
+    gap: 20px;
+    position: static; /* bỏ position: relative nếu không cần */
+    width: 100%;
+    max-width: 800px; /* giới hạn chiều rộng nếu muốn */
+  }
+
+  /* Bỏ position absolute, đặt width/height cố định hoặc auto */
+  .material-image1,
+  .material-image2,
+  .material-image3 {
+    position: static;
+    width: 250px; /* tuỳ chỉnh kích thước phù hợp */
+    height: auto;
+  }
+
+  /* Ẩn hoặc thu nhỏ khối nền nếu không muốn chiếm quá nhiều chỗ */
+  .material-bg {
+    display: none; 
+  }
+}

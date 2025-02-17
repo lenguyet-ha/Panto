@@ -360,7 +360,7 @@ input::placeholder {
   }
 }
 @media screen and (width: 902px) and (height: 1443px) {
-  body {
+  #home body {
     width: 100%;
     margin: 0 auto;
     height: 100%;
@@ -384,7 +384,7 @@ input::placeholder {
     left: 0;
     margin-top: 40px;
   }
-  .container {
+  #home .container {
     font-size: 12px;
   }
 
@@ -423,16 +423,16 @@ input::placeholder {
     margin-bottom: 2px;
   }
   /* Header (Logo, Nav) */
-  .nav-links {
+  #home .nav-links {
     gap: 40px;
   }
-  .nav-links a {
+  #home .nav-links a {
     font-size: 16px;
   }
   .cart img {
     width: 20px;
   }
-  .footer {
+  #home .footer {
     flex-direction: column !important; /* Ghi đè thuộc tính row */
     align-items: center; /* Căn giữa nếu muốn */
     justify-content: flex-start; /* hoặc center, tùy ý */
@@ -442,7 +442,7 @@ input::placeholder {
   }
 
   /* Bên trong footer-content cũng xếp dọc */
-  .footer-content {
+  #home .footer-content {
     display: flex;
     flex-direction: column !important;
     align-items: center;
@@ -452,7 +452,7 @@ input::placeholder {
   }
 
   /* Nếu muốn mỗi khối chiếm hết chiều ngang khi xếp dọc */
-  .footer-content > div {
+  #home .footer-content > div {
     max-width: 100%;
   }
   .footer h2 {
@@ -461,18 +461,18 @@ input::placeholder {
 }
 @media screen and (min-width: 375px) and (max-width: 393px) and (min-height: 667px) and (max-height: 876px) {
   /* Đảm bảo body không tràn ngang */
-  body {
+  #home body {
     width: 100%;
     margin: 0 auto;
     height: 100vh;
     overflow-x: hidden;
   }
-  html,
-  body {
+  #home html,
+  #home body {
     margin: 0;
     padding: 0;
   }
-  .container {
+  #home .container {
     position: relative;
     top: -20px;
   }
@@ -538,17 +538,17 @@ input::placeholder {
   }
 
   /* Header (Logo, Nav) */
-  .container {
+  #home .container {
     font-size: 12px; /* Giảm cỡ chữ chung nếu cần */
   }
   .logo .panto {
     font-size: 14px !important;
   }
 
-  .nav-links {
+  #home .nav-links {
     gap: 10px; /* Giảm khoảng cách giữa các link */
   }
-  .nav-links a {
+  #home .nav-links a {
     font-size: 12px; /* Giảm một chút cho vừa màn hình hẹp */
   }
   .cart img {
@@ -556,7 +556,7 @@ input::placeholder {
   }
 
   /* FOOTER */
-  .footer {
+  #home .footer {
     margin: 100px auto 0 auto !important; /* Giảm margin trên */
     height: auto; /* Cho footer tự co chiều cao */
     display: flex;
@@ -570,7 +570,7 @@ input::placeholder {
     
   }
 
-  .footer h2 {
+  #home .footer h2 {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 20px;
@@ -578,7 +578,7 @@ input::placeholder {
     margin-top: 20px;
   }
 
-  .footer-content {
+  #home .footer-content {
     position: static;
     display: flex;
     flex-direction: column;
@@ -586,20 +586,20 @@ input::placeholder {
     gap: 10px;
   }
 
-  .footer-content > div {
+  #home  .footer-content > div {
     max-width: 200px; /* Giới hạn độ rộng mỗi khối */
   }
 
-  .footer-content-item p {
+  #home .footer-content-item p {
     font-size: 11px;
     line-height: 16px;
     text-align: center;
     height: 50px;
   }
-  .footer-content-item {
+  #home .footer-content-item {
     height: 120px;
   }
-  .footer-content-item h4 {
+  #home .footer-content-item h4 {
     font-size: 13px;
     position: static; /* Bỏ absolute nếu có */
     bottom: auto;
@@ -607,7 +607,7 @@ input::placeholder {
   }
 
   /* Mũi tên More info */
-  .more-info-arrow {
+  #home .more-info-arrow {
     position: relative;
     display: flex;
     align-items: center;
@@ -615,7 +615,7 @@ input::placeholder {
     width: 100px;
     justify-self: center;
   }
-  .more-info-arrow svg {
+  #home  .more-info-arrow svg {
     width: 30px;
     height: auto;
     position: static;
