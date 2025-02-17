@@ -182,3 +182,206 @@ body {
   width: 100%;
   max-width: 1440px;
 }
+@media screen and (min-width: 768px) and (max-width: 810px) {
+  /* Adjust overall container padding */
+  .container {
+    padding: 0 20px;
+  }
+
+  /* Scale down header title */
+  .header h1 {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+
+  /* Center and resize the tab container */
+  .tab-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /* Stack product cards vertically with reduced gap */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; /* adjust gap as needed */
+    margin-top: 50px;
+    justify-items: center;
+  }
+
+  /* Ensure product cards adjust accordingly */
+  .product-card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  /* Optionally hide navigation arrows if they interfere with the grid layout */
+  .arrow-left,
+  .arrow-right {
+    display: none;
+  }
+
+  /* Adjust view-all section spacing */
+  .view-all {
+    margin-top: 20px;
+    gap: 8px;
+  }
+}
+@media screen and (width: 902px) and (height: 1443px) {
+  /* Điều chỉnh container chung */
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Điều chỉnh tiêu đề */
+  .header h1 {
+    font-size: 36px;
+    margin-top: 40px;
+  }
+
+  /* Sắp xếp danh sách sản phẩm thành lưới 2 cột */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 80px;
+  }
+
+  /* Điều chỉnh card sản phẩm */
+  .product-card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  /* Điều chỉnh hình ảnh bên trong card */
+  .product-card img {
+    width: 100%;
+    height: auto;
+    transform: translateY(-30px);
+  }
+
+  /* Ẩn mũi tên điều hướng nếu không cần thiết */
+  .arrow-left,
+  .arrow-right {
+    display: none;
+  }
+
+  /* Điều chỉnh phần "View All" */
+  .view-all {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 393px) and (min-height: 667px) and (max-height: 876px) {
+  /* Điều chỉnh container */
+  .container {
+    width: 100%;
+    padding: 0 5px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn giữa các phần tử theo chiều dọc */
+    align-items: center; 
+  }
+
+  /* Giảm kích thước chữ tiêu đề */
+  .header h1 {
+    font-size: 22px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  /* Điều chỉnh tab */
+  .tab-container {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    margin: 10px auto;
+    padding: 4px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .tab {
+    flex: 1;
+    text-align: center;
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+
+  /* Sử dụng grid 2 cột cho danh sách sản phẩm */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    margin-top: 15px;
+    position: relative;
+    left: 15px;
+  }
+
+  /* Giảm kích thước card sản phẩm */
+  .product-card {
+    width: 80%;
+    padding: 5px;
+    height: 90%;
+  }
+
+  /* Điều chỉnh hình ảnh trong card */
+  .product-card img {
+    width: 80%;
+    height: auto;
+    transform: translateY(-10px);
+  }
+
+  /* Ẩn mũi tên điều hướng */
+  .arrow-left,
+  .arrow-right {
+    display: none;
+  }
+  .product-info p {
+    font-size: 12px;
+  }
+  .product-info h2 {
+    font-size: 14px;
+  }
+  .rating, .price .number  {
+    font-size: 10px;
+  }
+
+  .add-to-cart {
+    font-size: 10px;
+    border-radius: 31px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .price .dollar{
+font-size: 8px;
+  }
+  .product-add {
+   position: relative;
+   bottom: 20px;
+  
+  }
+
+  /* Giảm kích thước chữ phần "View All" */
+  .view-all {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+}
