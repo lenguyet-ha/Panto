@@ -25,14 +25,16 @@
   }
   
 #material body {
-  font-family: Arial, sans-serif;
+
+  font-family: "Gilroy", serif;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
-.body {
+#material .body {
   position: relative;
   width: 100%;
   display: flex;
@@ -42,23 +44,23 @@
   height: 100vh;
 
 }
-.material-image1 {
+#material .material-image1 {
   position: absolute;
   top: 170px;
   right: 487px;
   z-index: 5;
 }
-.material-image3 {
+#material .material-image3 {
   position: absolute;
   top: 450px;
   right: 487px;
 }
-.material-image2 {
+#material .material-image2 {
   position: absolute;
   top: 330px;
   right:0;
 }
-.material-bg{
+#material .material-bg{
    position: absolute;
   border-radius: 20px 0 0 0 ;
   background-color: #f5f0f0;
@@ -68,13 +70,13 @@
   top: 270px;
   z-index: -1;
 }
-.materials-title{
+#material .materials-title{
     font-family: "Gilroy", serif;
     font-weight: 600;
     color: #e58411;
  
 }
-.materials-heading{
+#material .materials-heading{
     font-family: "Gilroy", serif;
     font-weight: 700;
     margin: 20px 0px;
@@ -85,7 +87,7 @@
 }
 
 
-.materials-description {
+#material .materials-description {
   max-width: 556px;
   font-size: 18px;
   line-height: 33.3px;
@@ -93,19 +95,19 @@
   font-weight: 400;
   margin: 20px 0px;
 }
-.more-info a{
+#material .more-info a{
     font-family: "Gilroy", serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 25.9px;
     color: #e58411;
 }
-.more-info{
+#material .more-info{
     display: flex;
     gap: 20px;
     align-items: center;
 }
-.materials-text{
+#material .materials-text{
     margin-left: 80px;
     margin-right: 94px;
 }

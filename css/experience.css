@@ -31,28 +31,30 @@
     max-width: 1440px;
     margin: 0 auto;
     overflow-x: hidden;
+
   }
-.ex-container{
+  #experience .ex-container{
     position: relative;
     width: 100%;
     display: flex;
     width: 1440px;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
   
   
 }
-.content-container{
+#experience .content-container{
     margin-right: 141px;
 }
-.ex-container .content-title p {
+#experience .ex-container .content-title p {
     font-size: 18px;
     font-family: "Gilroy", serif;
     font-weight: 600;
     color: #e58411;
   }
-  .ex-container  .content-experience p {
+  #experience  .ex-container  .content-experience p {
     max-width: 556px;
     font-size: 18px;
     font-family: "Gilroy", serif;
@@ -61,42 +63,42 @@
     color: #1e1e1eb5;
     margin: 20px 0px;
   }
-  .ex-container .content-subtitle h1 {
+  #experience  .ex-container .content-subtitle h1 {
     max-width: 413px;
     font-size: 42px;
     font-family: "Gilroy", serif;
     font-weight: 700;
     margin: 20px 0px;
   }
-  .ex-container  .more-info {
+  #experience .ex-container  .more-info {
     display: flex;
     gap: 20px;
     align-items: center;
   }
-  .ex-container  .more-info a {
+  #experience  .ex-container  .more-info a {
     color: #e58411;
     font-family: "Gilroy", serif;
     font-weight: 500;
     font-size: 14px;
   }
-  .ex-container .image-container{
+  #experience  .ex-container .image-container{
     position: relative;
   }
-  .ex-container   .experience-shapes,
-  .ex-container .experience-shapes1 {
+  #experience  .ex-container   .experience-shapes,
+  #experience .ex-container .experience-shapes1 {
   position: absolute;
   
   background-color: #f2eded;
   z-index: -1;
 }
-.ex-container .experience-shapes1 {
+#experience .ex-container .experience-shapes1 {
     border-radius: 20px;
   top: 70px;
   left: 168px;
   height: 301px;
   width: 495px;
 }
-.ex-container .experience-shapes {
+#experience .ex-container .experience-shapes {
   position: absolute;
   border-radius:0 20px;
   top: -70px;
@@ -178,35 +180,59 @@
 }
 @media screen and (min-width: 375px) and (max-width: 393px) and (min-height: 667px) and (max-height: 876px) {
   /* Căn giữa nội dung theo chiều dọc bằng cách sắp xếp theo cột */
-  #experience .container {
+  #experience .ex-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh; /* Dùng 100vh để container luôn chiếm đủ chiều cao màn hình */
     padding: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    left: 17%;
   }
-
-  /* Image-container được căn giữa và có margin dưới để tạo khoảng cách */
-  #experience  .image-container {
+ #experience body {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow-x: hidden;
   }
+  #experience html,
+  #experience body {
+    margin: 0;
+    padding: 0;
+  }
+  #experience .experience{
+    width: 70%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #experience .experience-shapes1, 
+  #experience .experience-shapes {
+    display: none;
+  }
+  /* Image-container được căn giữa và có margin dưới để tạo khoảng cách */
+
   
   /* Content-container được căn giữa và chiếm đủ chiều rộng */
   #experience  .content-container {
-    width: 100%;
+    width: 80%;
     text-align: center;
+    position: relative;
+    left: 20px;
   }
   
   /* Giảm kích thước chữ và margin cho các phần nội dung nếu cần */
-  #experience  .content-title p {
-    font-size: 16px;
+  #experience  .content-container .content-title p {
+    font-size: 16px !important;
+    margin-top: 10px;
   }
   
-  #experience  .content-subtitle h1 {
-    font-size: 28px;
+  #experience .content-container  .content-subtitle h1 {
+    font-size: 20px;
     margin: 10px 0;
   }
   
@@ -218,6 +244,9 @@
   
   #experience  .more-info a {
     font-size: 12px;
+  }
+  #experience .more-info{
+    margin-left: 70px;
   }
 }
 
