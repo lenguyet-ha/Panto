@@ -3,5 +3,27 @@ body{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+     height: max-content;
+}
+#experience1 .ex-container{
+    position: relative;
+    padding-top: 300px;
+
+
+}
+#material {
+    padding-top: 200px;
+}
+#material .material-body {
+    position: relative;
+
+}
+#material .material-body .materials-text{
+  position: relative;
+  top: 250px;
+  
+}
+#testimonial .container {
+    position: relative;
+    top: 400px;
 }
