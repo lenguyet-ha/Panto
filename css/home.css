@@ -48,7 +48,7 @@
 }
 
 #home .hero-content{
-  height: auto;
+  /* height: auto; */
   position: relative;
  
 }
@@ -262,6 +262,8 @@ top: 31px;
     transform: translateY(0);
     left: 0;
     margin-top: 40px;
+    position: relative;
+    top: 250px;
   }
   #home  .container {
     font-size: 12px;
@@ -369,6 +371,9 @@ top: 31px;
   #home .more-info-arrow svg {
     width: 40px;
     height: auto;
+    position: absolute;
+    right: 110px;
+    top: 50px;
   }
 }
 @media screen and (width: 902px) and (height: 1443px) {
@@ -395,13 +400,15 @@ top: 31px;
     transform: translateY(0);
     left: 0;
     margin-top: 40px;
+    position: relative;
+    top: 260px;
   }
   #home .container {
     font-size: 12px;
   }
 
   #home .hero-title {
-    font-size: 30px;
+    font-size: 32px;
     margin-top: 30px;
     line-height: 42px;
   }
@@ -411,28 +418,35 @@ top: 31px;
 
   .turn-your-room {
     font-size: 16px;
+    line-height: 24px;
     left: 0;
     margin-top: 0px;
-    max-width: 400px;
+    max-width: 500px;
   }
 
   .search-wrapper {
     position: relative;
     bottom: 35px;
+  
   }
 
   .search-wrapper .input {
     width: 200px;
-    height: 30px;
+    height: 40px !important;
+    position: relative;
+    top: 3px;
+    right: 6px;
   }
   input::placeholder {
-    font-size: 12px;
+    font-size: 14px !important;
   }
   .search-btn {
-    width: 20px;
-    position: relative;
-    right: 30px;
-    margin-bottom: 2px;
+    width: 30px;
+    height: 30px;
+    /* position: absolute !important;
+    bottom: 20px !important; */
+ 
+    
   }
   /* Header (Logo, Nav) */
   #home .nav-links {
@@ -472,6 +486,17 @@ top: 31px;
   #home .footer h2 {
     margin: 50px 0 30px 0;
   }
+  #home .more-info-arrow {
+    position: relative;
+    gap: 5px;
+   
+  }
+  #home  .more-info-arrow svg {
+    width: 30px;
+    height: auto;
+    position: static;
+    
+  }
 }
 @media screen and (width: 375px) and (height: 667px)   {
   /* Đảm bảo body không tràn ngang */
@@ -498,6 +523,7 @@ top: 31px;
   /* HERO SECTION */
   #home  .hero {
     height: auto; /* Bỏ chiều cao cố định */
+    min-height: 100vh;
     padding: 20px 0; /* Tạo khoảng trống trên-dưới nếu cần */
   }
 
@@ -537,6 +563,15 @@ top: 31px;
    
   
   }
+#home .more-info-arrow svg{
+  display: none;
+
+  
+}
+#home .more-info-arrow{
+  height: 20px;
+
+}
 
 
   #home  .search-wrapper .input {
@@ -590,7 +625,7 @@ top: 31px;
   #home .footer h2 {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: static;
     margin-top: 20px;
   }
@@ -615,6 +650,9 @@ top: 31px;
     height: 50px;
   }
   #home .footer-content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 120px;
   }
   #home .footer-content-item h4 {
@@ -649,7 +687,8 @@ top: 31px;
   
   }
   #home{
-    height: 90vh;
+  
+    min-height: 90vh;
 
   }
   #home html,
@@ -677,11 +716,13 @@ top: 31px;
 
   /* Nội dung hero */
   #home   .hero-content {
-    transform: translateY(0); /* Bỏ dịch chuyển quá nhiều */
+    transform: none;
     margin-top: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    top: 250px;
   }
 
   #home .hero-title {
@@ -796,15 +837,12 @@ top: 31px;
     position: relative;
     display: flex;
     align-items: center;
-    gap: 5px;
+
     width: 100px;
     justify-self: center;
   }
   #home  .more-info-arrow svg {
-    width: 30px;
-    height: auto;
-    position: static;
-    margin-bottom: 20px;
+    display: none;
   }
 }
 @media screen and (width:393px) and (height: 876px)  {
@@ -850,6 +888,8 @@ top: 31px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    top: 260px;
   }
 
   #home .hero-title {
@@ -889,7 +929,19 @@ top: 31px;
     bottom: 3px;
     left: -10px;
   }
-
+  #home .more-info-arrow {
+    position: relative;
+    display: flex;
+    top: -20px;
+  
+  }
+  #home  .more-info-arrow svg {
+    width: 30px;
+    height: auto;
+    position: static;
+    margin-top: 35px;
+   
+  }
 
   #home  .logo .panto {
     font-size: 14px !important;
@@ -970,5 +1022,176 @@ top: 31px;
     height: auto;
     position: static;
     margin-bottom: 35px;
+  }
+}
+@media  screen and (width: 412px) and (height: 914px) {
+  #home body {
+    width: 100%;
+    margin: 0 auto;
+    
+    overflow-x: hidden;
+  
+  }
+  #home{
+  
+    min-height: 80vh;
+
+  }
+  #home html,
+  #home body {
+    margin: 0;
+    padding: 0;
+  }
+  #home .container {
+    position: relative;
+    top: -20px;
+  }
+  /* HERO SECTION */
+  #home  .hero {
+    height: auto; /* Bỏ chiều cao cố định */
+    padding: 20px 0; /* Tạo khoảng trống trên-dưới nếu cần */
+  }
+
+  /* Hình nền hero */
+  #home  .hero-background,
+  #home  .hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Giữ tỷ lệ ảnh */
+  }
+
+  /* Nội dung hero */
+  #home   .hero-content {
+    transform: none;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 250px;
+  }
+
+  #home .hero-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 45px;
+  }
+  #home  .hero-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  #home  .turn-your-room {
+    font-size: 12px;
+    line-height: 16px;
+    width: 300px;
+    position: relative;
+   
+  
+  }
+
+
+  #home  .search-wrapper .input {
+    width: 150px;
+    height: 20px;
+  }
+  #home  .search-btn {
+    width: 15px;
+    position: absolute;
+    right: 38px;
+    top: 2.4px;
+  }
+  #home  input::placeholder {
+    font-size: 8px;
+    position: relative;
+    bottom: 3px;
+    left: -10px;
+  }
+
+  /* Header (Logo, Nav) */
+  #home .container {
+    font-size: 12px; /* Giảm cỡ chữ chung nếu cần */
+  }
+  #home  .logo .panto {
+    font-size: 14px !important;
+  }
+
+  #home .nav-links {
+    gap: 10px !important; /* Giảm khoảng cách giữa các link */
+  }
+  #home .nav-links a {
+    font-size: 12px; /* Giảm một chút cho vừa màn hình hẹp */
+  }
+  .cart img {
+    width: 15px; /* Giảm kích thước icon giỏ hàng */
+  }
+
+  /* FOOTER */
+  #home .footer {
+     margin: 100px auto 0 auto !important; /* Giảm margin trên */
+    height: auto; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    left: 82.5px;
+    position: absolute;
+    padding: 10px; 
+    top: 200px;
+   
+    
+  }
+
+  #home .footer h2 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    position: static;
+    margin-top: 20px;
+  }
+
+  #home .footer-content {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #home  .footer-content > div {
+    max-width: 200px; /* Giới hạn độ rộng mỗi khối */
+  }
+
+  #home .footer-content-item p {
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    height: 50px;
+  }
+  #home .footer-content-item {
+    height: 120px;
+  }
+  #home .footer-content-item h4 {
+    font-size: 13px;
+    position: static; /* Bỏ absolute nếu có */
+    bottom: auto;
+    margin-bottom: 10px;
+  }
+
+  /* Mũi tên More info */
+  #home .more-info-arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100px;
+    justify-self: center;
+  }
+  #home  .more-info-arrow svg {
+    width: 30px;
+    height: auto;
+    position: static;
+    margin-bottom: 20px;
   }
 }
